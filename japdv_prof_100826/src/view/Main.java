@@ -87,6 +87,12 @@ public class Main extends JFrame {
 		panelLateral.add(lblSistema);
 
 		JButton btnFornecedores = new JButton("Fornecedores");
+		btnFornecedores.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frmFornecedor fornecedor = new frmFornecedor();
+         fornecedor.setVisible(true);
+				}
+		});
 		btnFornecedores.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		btnFornecedores.setBorderPainted(false);
 		btnFornecedores.setForeground(new Color(255, 255, 255));
